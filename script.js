@@ -24,14 +24,14 @@ function adicionarTarefa() {
     acoesDiv.className = 'acoesTarefa';
 
     var completaBtn = document.createElement('button');
-    completaBtn.innerHTML = '✅'; // Emoji checkmark
+    completaBtn.innerHTML = '✅';
     completaBtn.onclick = function () {
         li.classList.toggle('concluida');
         containerTarefa.style.backgroundColor = li.classList.contains('concluida') ? '#5dc460' : 'white';
     };
 
     var editarBtn = document.createElement('button');
-    editarBtn.innerHTML = '✏️'; // Emoji lápis
+    editarBtn.innerHTML = '✏️';
     editarBtn.onclick = function () {
         var novoTexto = prompt('Editar tarefa:', textoTarefa);
         if (novoTexto !== null) {
@@ -40,7 +40,7 @@ function adicionarTarefa() {
     };
 
     var excluirBtn = document.createElement('button');
-    excluirBtn.innerHTML = '🗑️'; // Emoji lixeira
+    excluirBtn.innerHTML = '🗑️';
     excluirBtn.onclick = function () {
         listaDeTarefas.removeChild(containerTarefa);
     };
