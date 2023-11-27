@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin: 50px;
+    color: white;
+    background-color: CadetBlue;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#taskInput {
+    width: 41.5%;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+#listaDeTarefas {
+    margin: 20px 0px 20px 0px;
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desenvolvido {
+    opacity: 0.4;
+    font-size: 30px;
+}
+
+#adicionarTarefaBtn {
+    padding: 8px;
+    cursor: pointer;
+}
+
+#iconeAdicionar::after {
+    content: '➕';
+    margin-left: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.containerTarefa {
+    width: 100%;
+    background-color: white;
+    padding: 0px 10px 0px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: left;
+    display: inline-block;
+    cursor: pointer;
+    max-height: 50px;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.containerTarefa:hover,
+.containerTarefa.selecionada {
+    background-color: Beige;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.tarefa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.acoesTarefa {
+    display: flex;
+    gap: 5px;
+}
+
+.acoesTarefa button {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.acoesTarefa button:hover {
+    background-color: rgb(84, 84, 218);
+    color: white;
+}
